@@ -184,23 +184,49 @@ article img {
   }
 }
 
-/* Estilo para pantallas más pequeñas (max-width de 480px) */
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.5rem;
-  }
+/* Tablets y pantallas medianas */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
 
-  .card-info img {
-    height: auto;
-  }
+    main, section {
+        padding: 0.5rem;
+    }
 
-  footer iframe {
-    width: 100%;
-    height: 300px;
-  }
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    form {
+        width: 90%;
+    }
 }
 
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 1.2rem;
+    }
 
+    .navbar {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+
+    ol {
+        padding: 0 10px;
+    }
+
+    input, button {
+        font-size: 0.9rem;
+    }
+}
 
 
 
