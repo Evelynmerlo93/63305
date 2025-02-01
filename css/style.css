@@ -154,6 +154,53 @@ article img {
     margin: auto;
 }
 
+/* Estilo para tablets y móviles (max-width de 768px) */
+@media (max-width: 768px) {
+  .container-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-info {
+    width: 90%;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  nav ul {
+    display: block;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  footer iframe {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Estilo para pantallas más pequeñas (max-width de 480px) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .card-info img {
+    height: auto;
+  }
+
+  footer iframe {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+
 
 
 
